@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/general.scss';
-@import '@/style/variables.scss';
+
 
 #jumbotron{
    background-color: $contentBgColor;

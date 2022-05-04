@@ -56,7 +56,7 @@
 
 <style lang="scss" scoped>
 @import '@/style/general.scss';
-@import '@/style/variables.scss';
+
 
 
 #shop-section{

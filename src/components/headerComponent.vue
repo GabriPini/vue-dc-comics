@@ -11,7 +11,7 @@
                 <ul>
 
                     <li v-for="(element, index) in navElement " :key="index">
-                        <a :class="{ active : element.current }" href="#"> {{ element.name }} </a>
+                        <a :class="{ active : element.current }" :href="element.url"> {{ element.name }} </a>
                     </li>
                     
                 </ul>
@@ -111,6 +111,7 @@ ul{
         justify-content: space-around;
         flex-basis: calc(100% / 2);
         height: 100%;
+        column-gap: 5px;
         a{
             display: inline-block;
             height: 100px;
@@ -120,6 +121,13 @@ ul{
             font-weight: 600;
             color: black;
             line-height: 100px;
+            padding: 0 0.5rem;
+
+            &:hover{
+                border-bottom: 4px solid $mainBlueColor;
+                color: $mainBlueColor;
+            
+            }
         }
         a.active{
             border-bottom: 4px solid $mainBlueColor;

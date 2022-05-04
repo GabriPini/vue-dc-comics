@@ -2,6 +2,7 @@
   <div id="app">
     <SiteHeader />
     <SiteMain />
+    <SiteBanner />
     <SiteFooter />
   </div>
 </template>
@@ -10,12 +11,14 @@
 import SiteHeader from '@/components/headerComponent.vue';
 import SiteMain from '@/components/mainComponent.vue'
 import SiteFooter from './components/footerComponent.vue'
+import SiteBanner from './components/bannerComponent.vue'
 export default {
   name: 'App',
   components: {
     SiteHeader,
     SiteMain,
-    SiteFooter
+    SiteBanner,
+    SiteFooter,
   }
 }
 </script>
